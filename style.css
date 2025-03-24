@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    padding: 5px;
+
+    text-decoration: none;
+    color: rgb(106, 106, 106);
+    font-weight: bold;
+}
+
+nav ul li a:active {
+    color:black
+}
+
+nav ul li a:hover {
+    background-color: rgb(197, 197, 197);
+    text-decoration: underline;
+}
+
+ button {
+    padding: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.auth button:hover{
+    background-color:rgb(40, 40, 40)
+   
+}
+
+.nav ul li a, .hero li {
+    transition:color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.hero {
+    padding: 50px;
+    background-color: #ababab;
+}
+
+.hero h1 {
+    font-size: 36px;
+}
+
+.hero button {
+    padding: 15px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.hero button:hover{
+    background-color:rgb(40, 40, 40)
+}
+
+.featured-products {
+    padding: 50px;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product {
+    margin-top: 20px;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 180px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+/* ================================= */
+.kenaishka{
+    width: 500px;
+}
+
+.sectin{
+    display: flex;
+    gap: 400px;
+    background-color:#e4e1e1
+}
+.h{
+    margin-top: 50px;
+}
+.mt{
+    margin-bottom: 40px;
+}
+
+/* ===================== */
+
+.remember{
+    text-align: left;
+}
+
+
+.see{
+    gap: 935px;
+    display: flex;
+    align-items:center
+    
+}
+
+.seeall{
+    gap: 867px;
+    display: flex;
+    align-items:center
+    
+}
+
+/*  ===========================recommended */
+
+.h1{
+   /* padding: 200px; */
+/* height: 200px; */
+margin-top: 200px;
+margin-left: 30px;
+}
