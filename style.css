@@ -63,7 +63,10 @@ nav ul li a:hover {
 
 .auth button:hover{
     background-color:rgb(40, 40, 40)
-   
+}
+.auth button a{
+    text-decoration: none;
+    color: white;
 }
 
 .nav ul li a, .hero li {
@@ -137,6 +140,10 @@ nav ul li a:hover {
 .h{
     margin-top: 50px;
 }
+.b a{
+  text-decoration: none;
+  color: white;
+}
 .mt{
     margin-bottom: 40px;
 }
@@ -169,4 +176,402 @@ nav ul li a:hover {
 /* height: 200px; */
 margin-top: 200px;
 margin-left: 30px;
+}
+
+.signup-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    margin: 1rem;
+    display: flex;
+    align-items: stretch;
+    margin-left: 350px;
+  }
+  
+  .form-section {
+    flex: 1;
+    padding-right: 2rem;
+  }
+  
+  .social-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2rem;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #1a1a1a;
+  }
+  
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  label {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  input {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #646cff;
+  }
+  
+  .signup-button {
+    background: #1a1a1a;
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+  }
+  
+  .signup-button:hover {
+    background: #2a2a2a;
+  }
+  
+  .divider-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 2rem;
+    position: relative;
+  }
+  
+  .divider-vertical::before,
+  .divider-vertical::after {
+    content: '';
+    width: 1px;
+    height: 45%;
+    background: #ddd;
+    position: absolute;
+  }
+  
+  .divider-vertical::before {
+    top: 0;
+  }
+  
+  .divider-vertical::after {
+    bottom: 0;
+  }
+  
+  .divider-vertical span {
+    background: white;
+    padding: 10px 0;
+    color: #666;
+    font-size: 0.9rem;
+    z-index: 1;
+  }
+  
+  .social-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  
+  .social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.8rem;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background: white;
+    cursor: pointer;
+    font-size: 0.9rem;
+    width: 100%;
+  }
+  
+  .social-button img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .social-button.facebook {
+    background: #1877f2;
+    color: white;
+    border: none;
+  }
+  
+  .social-button.facebook img {
+    filter: brightness(0) invert(1);
+  }
+  
+  .social-button.google {
+    color: #666;
+  }
+  
+  .social-button.github {
+    background: #24292e;
+    color: white;
+    border: none;
+  }
+  
+  .social-button.github img {
+    filter: brightness(0) invert(1);
+  }
+  
+  .login-link {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .login-link a {
+    color: #646cff;
+    text-decoration: none;
+  }
+  
+  .login-link a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .signup-container {
+      flex-direction: column;
+      max-width: 400px;
+    }
+  
+    .form-section {
+      padding-right: 0;
+    }
+  
+    .social-section {
+      padding-left: 0;
+      margin-top: 2rem;
+    }
+  
+    .divider-vertical {
+      flex-direction: row;
+      margin: 2rem 0;
+    }
+  
+    .divider-vertical::before,
+    .divider-vertical::after {
+      width: 45%;
+      height: 1px;
+      top: 50%;
+    }
+  
+    .divider-vertical::before {
+      left: 0;
+    }
+  
+    .divider-vertical::after {
+      right: 0;
+    }
+  
+    .divider-vertical span {
+      padding: 0 10px;
+    }
+  }
+
+/* Cart Icon Styles */
+.cart-icon {
+    position: relative;
+    margin-left: 20px;
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #ff4444;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 0.8em;
+}
+
+/* Cart Page Styles */
+.cart-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.cart-items {
+    margin: 20px 0;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    gap: 20px;
+}
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.item-details {
+    flex: 1;
+    text-align: left;
+}
+
+.item-details h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.2em;
+}
+
+.item-details p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.item-quantity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.item-quantity button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    background: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-quantity button:hover {
+    background: #f5f5f5;
+}
+
+.remove-item {
+    background: none;
+    border: none;
+    color: #ff4444;
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 5px;
+}
+
+.cart-summary {
+    margin-top: 20px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 5px;
+}
+
+.cart-summary > div {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.total {
+    font-weight: bold;
+    font-size: 1.2em !important;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+.checkout-btn {
+    width: 100%;
+    padding: 15px;
+    background: #000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.checkout-btn:hover {
+    background: #333;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+
+/* User Account Styles */
+.user-account {
+    position: relative;
+    display: inline-block;
+}
+
+.account-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.account-btn i {
+    font-size: 1.2em;
+}
+
+.account-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    padding: 8px;
+    min-width: 120px;
+}
+
+.user-account:hover .account-dropdown {
+    display: block;
+}
+
+.account-dropdown button {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    background: none;
+    color: black;
+    cursor: pointer;
+    text-align: left;
+}
+
+.account-dropdown button:hover {
+    background: #f5f5f5;
 }
