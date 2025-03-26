@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glasses Shop - Burnikk</title>
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+    <div class="container">
+        <div class="product-gallery">
+            <div class="thumbnail-list">
+                <img src="./static/salt-image-1.png" alt="Glasses view 1" class="thumbnail active" onclick="changeMainImage(this.src)">
+                <img src="./static/salt-image-2.png" alt="Glasses view 2" class="thumbnail" onclick="changeMainImage(this.src)">
+                <img src="./static/salt-image-3.png" alt="Glasses view 3" class="thumbnail" onclick="changeMainImage(this.src)">
+            </div>
+            <div class="main-image">
+                <img src="./static/salt-image-1.png" alt="Main glasses view" id="mainImage">
+            </div>
+        </div>
+        <div class="product-info">
+            <span class="category">Sexbomb</span>
+            <h1>Burnikk</h1>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat placeat similique dicta nulla praesentium deserunt. Corporis repellendus deleniti dolores eligendi.</p>
+            
+            <div class="product-options">
+                <h3>Lens Width and Frame Size</h3>
+                <select id="size">
+                    <option value="">--Select Size--</option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+
+                <h3>Choose Color</h3>
+                <div class="color-options">
+                    <button class="color-btn" style="background-color: #000000" onclick="selectColor(this)"></button>
+                    <button class="color-btn" style="background-color: #FF00FF" onclick="selectColor(this)"></button>
+                    <button class="color-btn" style="background-color: #005B96" onclick="selectColor(this)"></button>
+                    <button class="color-btn" style="background-color: #8B4513" onclick="selectColor(this)"></button>
+                    <button class="color-btn" style="background-color: #FF0000" onclick="selectColor(this)"></button>
+                    <button class="color-btn" style="background-color: #00FFD1" onclick="selectColor(this)"></button>
+                    <button class="color-btn" style="background-color: #FF8C00" onclick="selectColor(this)"></button>
+                </div>
+
+                <div class="price">
+                    <span>$240.00</span>
+                </div>
+
+                <button class="add-to-basket">Add To Basket</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
